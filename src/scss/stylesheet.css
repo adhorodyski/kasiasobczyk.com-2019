@@ -1,1 +1,27 @@
-/* own global stylesheet */
+.App {
+  background: #EDEBE3;
+}
+
+.navbar .nav-link {
+  padding: 0;
+  margin: 0 10px;
+  color: #000000;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #B4966E;
+  transition: all 0.3s;
+}
+
+#kontakt #phone {
+  font-size: 20px;
+}
+
+#kontakt #facebook {
+  color: #000000;
+}
+
+#kontakt #facebook:hover {
+  color: #B4966E;
+  transition: all 0.3s;
+}

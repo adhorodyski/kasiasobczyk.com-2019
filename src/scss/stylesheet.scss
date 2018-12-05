@@ -6,3 +6,36 @@ $ceremColor: #E1C1B4;
 $activeTextColor: #B4966E;
 
 //reuse (mixins)
+
+
+//app
+.App {
+  background: $soloColor;
+}
+
+//header
+.navbar .nav-link {
+  padding: 0;
+  margin: 0 10px;
+  color: $black;
+  &:hover,
+  &.active {
+    color: $activeTextColor;
+    transition: all 0.3s;
+  }
+}
+
+//footer
+#kontakt {
+  #phone {
+    font-size: 20px;
+  }
+
+  #facebook {
+    color: $black;
+    &:hover {
+      color: $activeTextColor;
+      transition: all 0.3s;
+    }
+  }
+}
