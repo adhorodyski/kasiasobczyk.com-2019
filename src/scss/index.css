@@ -1,0 +1,52 @@
+/* box-sizing for all elements in html */
+html, * {
+  box-sizing: border-box !important;
+}
+*::before,
+*::after {
+  box-sizing: inherit !important;
+}
+
+                        /* Calibre fonts */
+
+/* Calibre Regular */
+@font-face {
+  font-family: 'MyFont';
+  src: url('./calibre-font/Calibre Regular.otf') format('otf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Calibre Medium */
+@font-face {
+  font-family: 'MyFont';
+  src: url('./calibre-font/Calibre Medium.otf') format('otf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Calibre Semibold */
+@font-face {
+  font-family: 'MyFont';
+  src: url('./calibre-font/Calibre Semibold.otf') format('otf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Calibre Semibold Italic */
+@font-face {
+  font-family: 'MyFont';
+  src: url('./calibre-font/Calibre Semibold Italic.otf') format('otf');
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* basic styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "MyFont" !important, -apple-system, "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
