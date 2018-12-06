@@ -12,8 +12,8 @@ class App extends Component {
     const Routes = () => (
       <Switch>
         <Route exact path="/koncerty-solowe" render={() => <Solo />} />
-        <Route exact path="/koncerty-edukacyjne" render={() => <Education />} />
-        <Route exact path="/oprawa-ceremonii" render={() => <Ceremonies />} />
+        <Route path="/koncerty-edukacyjne" render={() => <Education />} />
+        <Route path="/oprawa-ceremonii" render={() => <Ceremonies />} />
       </Switch>
     );
     return (
