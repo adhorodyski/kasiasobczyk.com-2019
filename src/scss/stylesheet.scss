@@ -4,13 +4,29 @@ $soloColor: #EDEBE3;
 $eduColor: #C0D8D8;
 $ceremColor: #E1C1B4;
 $activeTextColor: #B4966E;
-
-//reuse (mixins)
-
+$shadowBlack: rgba(0,0,0,0.12);
 
 //app
 .App {
   background: $soloColor;
+  padding: 0 15%;
+
+  .flexWrapper {
+    display: flex;
+    margin: 100px auto;
+  }
+
+  .gallery {
+    max-width: 700px;
+
+    .carousel-inner {
+      border-radius: 20px;
+      transition: all 0.1s;
+      -webkit-box-shadow: 0px 0px 36px 18px $shadowBlack;
+      -moz-box-shadow: 0px 0px 36px 18px $shadowBlack;
+      box-shadow: 0px 0px 36px 18px $shadowBlack;
+    }
+  }
 }
 
 //header
@@ -36,6 +52,18 @@ $activeTextColor: #B4966E;
     &:hover {
       color: $activeTextColor;
       transition: all 0.3s;
+    }
+  }
+}
+
+// media queries
+@media screen and (max-width: 1400px) {
+  .App {
+    padding: 0 10%;
+    .flexWrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 50px auto;
     }
   }
 }

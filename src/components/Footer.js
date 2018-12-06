@@ -13,8 +13,13 @@ const PageFooter = styled.footer`
 
 const StyledWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  margin: 10px 0;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 10px auto;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const ContactOption = styled.div`
@@ -22,10 +27,15 @@ const ContactOption = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   margin: 0 20px;
+
+  @media (max-width: 800px) {
+    margin: 20px auto;
+  }
 `;
 
 const Value = styled.p`
   font-size: 15px;
+  text-align: center;
   line-height: 0.7;
   margin-bottom: 0;
   font-weight: 500;
@@ -60,7 +70,7 @@ class Footer extends Component {
     return(
       <PageFooter id='kontakt'>
         <StyledWrapper>
-          <ContactOption>
+          <ContactOption className="contactOption">
             <Value>
               {this.state.mail}
             </Value>
@@ -68,7 +78,7 @@ class Footer extends Component {
               mail
             </Key>
           </ContactOption>
-          <ContactOption>
+          <ContactOption className="contactOption">
             <Value
               id='phone'>
               {this.state.phone}
@@ -77,7 +87,7 @@ class Footer extends Component {
               telefon
             </Key>
           </ContactOption>
-          <ContactOption>
+          <ContactOption className="contactOption">
             <Value
               as='a'
               href={this.state.facebookLink}
