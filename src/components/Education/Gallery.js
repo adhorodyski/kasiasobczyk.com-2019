@@ -9,14 +9,67 @@ import styled from 'styled-components';
 
 const items = [
   {
-    src:require("../assets/ceremonies-assets/ceremony1.jpg")
+    src:require("../assets/edu-assets/edu1.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu2.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu3.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu4.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu5.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu6.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu7.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu8.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu9.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu10.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu11.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu12.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu13.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu14.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu15.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu16.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu17.jpg")
+  },
+  {
+    src:require("../assets/edu-assets/edu18.jpg")
   }
 ];
 
 //styled-components
 const GallerySlides = styled.div`
+  margin: 100px auto;
+
   @media (max-width: 1400px) {
-    margin: 50px auto;
+    margin: 100px auto;
   }
 `;
 
