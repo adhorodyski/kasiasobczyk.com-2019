@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -11,9 +11,22 @@ class App extends Component {
   render() {
     const Routes = () => (
       <Switch>
-        <Route exact path="/koncerty-solowe" render={() => <Solo />} />
-        <Route path="/koncerty-edukacyjne" render={() => <Education />} />
-        <Route path="/oprawa-ceremonii" render={() => <Ceremonies />} />
+        <Route
+          exact path="/"
+          render={() => <Redirect to="/koncerty-solowe" />}
+        />
+        <Route
+          path="/koncerty-solowe"
+          render={() => <Solo />}
+        />
+        <Route
+          path="/koncerty-edukacyjne"
+          render={() => <Education />}
+        />
+        <Route
+          path="/oprawa-ceremonii"
+          render={() => <Ceremonies />}
+         />
       </Switch>
     );
     return (
