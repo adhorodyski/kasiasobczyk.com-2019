@@ -15,7 +15,7 @@ const items = [
 
 //styled-components
 const GallerySlides = styled.div`
-  @media (max-width: 1400px) {
+  @media (max-width: 1500px) {
     margin: 50px auto;
   }
 `;

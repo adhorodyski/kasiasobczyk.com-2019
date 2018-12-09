@@ -23,6 +23,16 @@ class Solo extends Component {
       soundcloudLink: "https://soundcloud.com/katarzynasobczyk/sets/koncerty-solowe-fragmenty"
     };
   }
+
+  componentDidMount() {
+    var orig = document.body.className;
+    document.body.className = 'solo-bg';
+  }
+
+  componentWillUnmout() {
+    document.body.className = '';
+  }
+
   render() {
     return(
       <styledWrapper>

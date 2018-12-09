@@ -23,6 +23,16 @@ class Ceremonies extends Component {
       soundcloudLink: "https://soundcloud.com/katarzynasobczyk/sets/oprawa-ceremonii-fragmenty"
     };
   }
+
+  componentDidMount() {
+    var orig = document.body.className;
+    document.body.className = 'cerem-bg';
+  }
+
+  componentWillUnmout() {
+    document.body.className = '';
+  }
+
   render() {
     return(
       <styledWrapper>

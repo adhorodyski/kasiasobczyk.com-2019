@@ -7,11 +7,19 @@ import Gallery from './Gallery';
 //styled-components
 const styledWrapper = styled.div`
   height: auto;
-  min-height: 500px;
 `;
 
 // exported component
 class Education extends Component {
+  componentDidMount() {
+    var orig = document.body.className;
+    document.body.className = 'edu-bg';
+  }
+
+  componentWillUnmout() {
+    document.body.className = '';
+  }
+
   render() {
     return(
       <styledWrapper>

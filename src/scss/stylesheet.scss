@@ -6,6 +6,7 @@ $ceremColor: #E1C1B4;
 $activeTextColor: #B4966E;
 $shadowBlack: rgba(0,0,0,0.12);
 
+// reuse
 @keyframes scale {
   0% {
     transform: scale(1);
@@ -18,9 +19,27 @@ $shadowBlack: rgba(0,0,0,0.12);
   }
 }
 
+//body
+body.solo-bg {
+  background: $soloColor;
+  transition: background 0.4s ease;
+  -webkit-transition: background 0.4s ease;
+}
+
+body.edu-bg {
+  background: $eduColor;
+  transition: background 0.4s ease;
+  -webkit-transition: background 0.4s ease;
+}
+
+body.cerem-bg {
+  background: $ceremColor;
+  transition: background 0.4s ease;
+  -webkit-transition: background 0.4s ease;
+}
+
 //app
 .App {
-  background: $eduColor;
   padding: 0 15%;
 
   .flexWrapper {
@@ -72,7 +91,7 @@ $shadowBlack: rgba(0,0,0,0.12);
 }
 
 // media queries
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .App {
     padding: 0 5%;
     transition: padding 0.5s;
