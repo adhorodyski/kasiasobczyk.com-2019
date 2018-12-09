@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const SoundcloudLogo = require("../assets/soundcloud.png");
 
@@ -18,6 +18,18 @@ const Text = styled.p`
   margin: 20px auto;
 `;
 
+const scale = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
+
 const Link = styled.a`
   width: 80px;
   height: 80px;
@@ -26,12 +38,20 @@ const Link = styled.a`
   -webkit-box-shadow: 0px 7px 17px 0px rgba(0,0,0,0.12);
   -moz-box-shadow: 0px 7px 17px 0px rgba(0,0,0,0.12);
   box-shadow: 0px 7px 17px 0px rgba(0,0,0,0.12);
+  &:hover {
+    animation: ${scale} 0.4s;
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 15px;
+  opacity: 0.85;
+  &:hover {
+    opacity: 1;
+    animation: ${scale} 0.6s;
+  }
 `;
 
 class Soundcloud extends Component {
