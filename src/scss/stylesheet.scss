@@ -74,11 +74,25 @@ $shadowBlack: rgba(0,0,0,0.12);
 // media queries
 @media screen and (max-width: 1400px) {
   .App {
-    padding: 0 10%;
+    padding: 0 5%;
+    transition: padding 0.5s;
+
     .flexWrapper {
       display: flex;
       flex-direction: column;
       margin: 50px auto;
+      transition: all 0.3s;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    padding: 0 5%;
+
+    .navbar .nav-link {
+      padding-bottom: 10px;
+      transition: padding-bottom 0.3s;
     }
   }
 }

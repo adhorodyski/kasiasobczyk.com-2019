@@ -7,15 +7,41 @@ const Logo = require('./assets/katsob-logo.png');
 // styled-components
 const Img = styled.img`
   height: 70px;
+  width: auto;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const PageHeader = styled.header`
   position: static;
   top: 0;
   left: 0;
-  height: 100px;
+  height: auto;
   width: 100%;
   background: transparent;
+`;
+
+const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding: 8px;
+  }
+`;
+
+const List = styled.ul`
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    text-align: center;
+  }
 `;
 
 // exported component
@@ -23,9 +49,9 @@ class Header extends Component {
   render() {
     return(
       <PageHeader>
-        <nav className="navbar">
+        <Nav className="navbar">
           <Img src={Logo} alt='Kasia Sobczyk'/>
-          <ul className="nav justify-content-end">
+          <List className="nav justify-content-end">
             <li className="nav-item">
               <NavLink
                 className="nav-link"
@@ -55,8 +81,8 @@ class Header extends Component {
                 kontakt
               </a>
             </li>
-          </ul>
-        </nav>
+          </List>
+        </Nav>
       </PageHeader>
     );
   }

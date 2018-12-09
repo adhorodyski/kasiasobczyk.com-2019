@@ -30,6 +30,7 @@ const ColumnsContainer = styled.div`
 
   @media (max-width: 1200px) {
     flex-direction: column;
+    transition: all 0.3s;
   }
 `;
 
@@ -41,6 +42,7 @@ const LeftColumn = styled.div`
   @media (max-width: 1200px) {
     width: 100%;
     text-align: left;
+    transition: all 0.3s;
   }
 `;
 
@@ -50,6 +52,7 @@ const RightColumn = styled.div`
   @media (max-width: 1200px) {
     width: 100%;
     text-align: right;
+    transition: all 0.3s;
   }
 `;
 
