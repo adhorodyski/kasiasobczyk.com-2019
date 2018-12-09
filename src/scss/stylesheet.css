@@ -12,20 +12,20 @@
 
 body.solo-bg {
   background: #EDEBE3;
-  transition: background 0.4s ease;
-  -webkit-transition: background 0.4s ease;
+  transition: background 0.5s ease-out;
+  -webkit-transition: background 0.5s ease-out;
 }
 
 body.edu-bg {
   background: #C0D8D8;
-  transition: background 0.4s ease;
-  -webkit-transition: background 0.4s ease;
+  transition: background 0.5s ease-out;
+  -webkit-transition: background 0.5s ease-out;
 }
 
 body.cerem-bg {
   background: #E1C1B4;
-  transition: background 0.4s ease;
-  -webkit-transition: background 0.4s ease;
+  transition: background 0.5s ease-out;
+  -webkit-transition: background 0.5s ease-out;
 }
 
 .App {

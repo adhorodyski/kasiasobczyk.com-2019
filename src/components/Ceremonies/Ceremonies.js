@@ -8,7 +8,6 @@ import Gallery from './Gallery';
 // styled-components
 const styledWrapper = styled.div`
   height: auto;
-  min-height: 500px;
 `;
 
 const flexWrapper = styled.div`
