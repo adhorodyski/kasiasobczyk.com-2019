@@ -25,7 +25,6 @@ class Ceremonies extends Component {
   }
 
   componentDidMount() {
-    var orig = document.body.className;
     document.body.className = 'cerem-bg';
   }
 

@@ -25,7 +25,6 @@ class Solo extends Component {
   }
 
   componentDidMount() {
-    var orig = document.body.className;
     document.body.className = 'solo-bg';
   }
 

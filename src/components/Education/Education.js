@@ -11,8 +11,8 @@ const styledWrapper = styled.div`
 
 // exported component
 class Education extends Component {
+  
   componentDidMount() {
-    var orig = document.body.className;
     document.body.className = 'edu-bg';
   }
 
