@@ -1,6 +1,7 @@
 {
   "name": "kasiasobczyk-2019",
   "version": "0.1.0",
+  "homepage": "http://kasiasobczyk.com",
   "private": true,
   "dependencies": {
     "react": "^16.6.3",

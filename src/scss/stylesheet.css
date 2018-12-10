@@ -42,7 +42,8 @@ body.cerem-bg {
   animation: scale 1s;
 }
 
-.App .gallery .carousel-inner {
+.App .gallery .carousel-inner,
+.App .gallery .d-block {
   border-radius: 20px;
   transition: all 0.1s;
   box-shadow: 0px 0px 36px 18px rgba(0, 0, 0, 0.12);
