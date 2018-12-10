@@ -35,8 +35,6 @@ const Link = styled.a`
   height: 80px;
   border-radius: 15px;
   margin: 20px auto;
-  -webkit-box-shadow: 0px 7px 17px 0px rgba(0,0,0,0.12);
-  -moz-box-shadow: 0px 7px 17px 0px rgba(0,0,0,0.12);
   box-shadow: 0px 7px 17px 0px rgba(0,0,0,0.12);
   &:hover {
     animation: ${scale} 0.4s;

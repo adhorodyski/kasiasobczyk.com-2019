@@ -23,19 +23,16 @@ $shadowBlack: rgba(0,0,0,0.12);
 body.solo-bg {
   background: $soloColor;
   transition: background 0.5s ease-out;
-  -webkit-transition: background 0.5s ease-out;
 }
 
 body.edu-bg {
   background: $eduColor;
   transition: background 0.5s ease-out;
-  -webkit-transition: background 0.5s ease-out;
 }
 
 body.cerem-bg {
   background: $ceremColor;
   transition: background 0.5s ease-out;
-  -webkit-transition: background 0.5s ease-out;
 }
 
 //app
@@ -56,8 +53,6 @@ body.cerem-bg {
     .carousel-inner {
       border-radius: 20px;
       transition: all 0.1s;
-      -webkit-box-shadow: 0px 0px 36px 18px $shadowBlack;
-      -moz-box-shadow: 0px 0px 36px 18px $shadowBlack;
       box-shadow: 0px 0px 36px 18px $shadowBlack;
     }
   }
@@ -86,7 +81,6 @@ body.cerem-bg {
     &:hover {
       color: $activeTextColor;
       transition: all 0.3s;
-      -webkit-transition: all 0.3s;
     }
   }
 }
@@ -96,14 +90,12 @@ body.cerem-bg {
   .App {
     padding: 0 5%;
     transition: padding 0.5s;
-    -webkit-transition: padding 0.5s;
 
     .flexWrapper {
       display: flex;
       flex-direction: column;
       margin: 50px auto;
       transition: all 0.3s;
-      -webkit-transition: all 0.3s;
     }
   }
 }
@@ -115,7 +107,6 @@ body.cerem-bg {
     .navbar .nav-link {
       padding-bottom: 10px;
       transition: padding-bottom 0.3s;
-      -webkit-transition: padding-bottom 0.3s;
     }
   }
 }
