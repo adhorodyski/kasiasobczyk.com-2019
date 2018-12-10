@@ -1,1 +1,97 @@
-/* own global stylesheet */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+body.solo-bg {
+  background: #EDEBE3;
+  transition: background 0.5s ease-out;
+}
+
+body.edu-bg {
+  background: #C0D8D8;
+  transition: background 0.5s ease-out;
+}
+
+body.cerem-bg {
+  background: #E1C1B4;
+  transition: background 0.5s ease-out;
+}
+
+.App {
+  padding: 0 15%;
+}
+
+.App .flexWrapper {
+  display: flex;
+  margin: 100px auto;
+}
+
+.App .gallery {
+  max-width: 700px;
+}
+
+.App .gallery:hover {
+  animation: scale 1s;
+}
+
+.App .gallery .carousel-inner,
+.App .gallery .d-block {
+  border-radius: 20px;
+  transition: all 0.1s;
+  box-shadow: 0px 0px 36px 18px rgba(0, 0, 0, 0.12);
+}
+
+.navbar .nav-link {
+  padding: 0;
+  margin: 0 10px;
+  color: #000000;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #B4966E;
+  transition: color 0.3s;
+}
+
+#kontakt #phone {
+  font-size: 20px;
+}
+
+#kontakt #facebook {
+  color: #000000;
+}
+
+#kontakt #facebook:hover {
+  color: #B4966E;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 1500px) {
+  .App {
+    padding: 0 5%;
+    transition: padding 0.5s;
+  }
+  .App .flexWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    transition: all 0.3s;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    padding: 0 5%;
+  }
+  .App .navbar .nav-link {
+    padding-bottom: 10px;
+    transition: padding-bottom 0.3s;
+  }
+}

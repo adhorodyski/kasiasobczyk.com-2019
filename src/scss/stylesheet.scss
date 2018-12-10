@@ -4,5 +4,110 @@ $soloColor: #EDEBE3;
 $eduColor: #C0D8D8;
 $ceremColor: #E1C1B4;
 $activeTextColor: #B4966E;
+$shadowBlack: rgba(0,0,0,0.12);
 
-//reuse (mixins)
+// reuse
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+//body
+body.solo-bg {
+  background: $soloColor;
+  transition: background 0.5s ease-out;
+}
+
+body.edu-bg {
+  background: $eduColor;
+  transition: background 0.5s ease-out;
+}
+
+body.cerem-bg {
+  background: $ceremColor;
+  transition: background 0.5s ease-out;
+}
+
+//app
+.App {
+  padding: 0 15%;
+
+  .flexWrapper {
+    display: flex;
+    margin: 100px auto;
+  }
+
+  .gallery {
+    max-width: 700px;
+    &:hover {
+      animation: scale 1s;
+    }
+
+    .carousel-inner,
+    .d-block {
+      border-radius: 20px;
+      transition: all 0.1s;
+      box-shadow: 0px 0px 36px 18px $shadowBlack;
+    }
+  }
+}
+
+//header
+.navbar .nav-link {
+  padding: 0;
+  margin: 0 10px;
+  color: $black;
+  &:hover,
+  &.active {
+    color: $activeTextColor;
+    transition: color 0.3s;
+  }
+}
+
+//footer
+#kontakt {
+  #phone {
+    font-size: 20px;
+  }
+
+  #facebook {
+    color: $black;
+    &:hover {
+      color: $activeTextColor;
+      transition: all 0.3s;
+    }
+  }
+}
+
+// media queries
+@media screen and (max-width: 1500px) {
+  .App {
+    padding: 0 5%;
+    transition: padding 0.5s;
+
+    .flexWrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 50px auto;
+      transition: all 0.3s;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .App {
+    padding: 0 5%;
+
+    .navbar .nav-link {
+      padding-bottom: 10px;
+      transition: padding-bottom 0.3s;
+    }
+  }
+}
