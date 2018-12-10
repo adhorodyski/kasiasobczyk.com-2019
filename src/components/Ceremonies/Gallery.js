@@ -17,6 +17,8 @@ const items = [
 const GallerySlides = styled.div`
   @media (max-width: 1500px) {
     margin: 50px auto;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
   }
 `;
 

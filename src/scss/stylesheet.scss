@@ -71,7 +71,7 @@ body.cerem-bg {
   &:hover,
   &.active {
     color: $activeTextColor;
-    transition: all 0.3s;
+    transition: color 0.3s;
   }
 }
 
@@ -86,6 +86,7 @@ body.cerem-bg {
     &:hover {
       color: $activeTextColor;
       transition: all 0.3s;
+      -webkit-transition: all 0.3s;
     }
   }
 }
@@ -95,12 +96,14 @@ body.cerem-bg {
   .App {
     padding: 0 5%;
     transition: padding 0.5s;
+    -webkit-transition: padding 0.5s;
 
     .flexWrapper {
       display: flex;
       flex-direction: column;
       margin: 50px auto;
       transition: all 0.3s;
+      -webkit-transition: all 0.3s;
     }
   }
 }
@@ -112,6 +115,7 @@ body.cerem-bg {
     .navbar .nav-link {
       padding-bottom: 10px;
       transition: padding-bottom 0.3s;
+      -webkit-transition: padding-bottom 0.3s;
     }
   }
 }
