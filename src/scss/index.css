@@ -3,6 +3,7 @@
 /* box-sizing for all elements in html */
 html, * {
   box-sizing: border-box !important;
+  font-family: "Fira Sans";
 }
 *::before,
 *::after {
@@ -21,4 +22,50 @@ body {
 
 a {
   text-decoration: none !important;
+}
+
+                      /* fira sans font */
+/* fontfaces for regular, medium, semibold and bold italic */
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fira-sans/FiraSans-Regular.eot');
+    src: url('fira-sans/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fira-sans/FiraSans-Regular.woff2') format('woff2'),
+        url('fira-sans/FiraSans-Regular.woff') format('woff'),
+        url('fira-sans/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fira-sans/FiraSans-Medium.eot');
+    src: url('fira-sans/FiraSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fira-sans/FiraSans-Medium.woff2') format('woff2'),
+        url('fira-sans/FiraSans-Medium.woff') format('woff'),
+        url('fira-sans/FiraSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fira-sans/FiraSans-SemiBold.eot');
+    src: url('fira-sans/FiraSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fira-sans/FiraSans-SemiBold.woff2') format('woff2'),
+        url('fira-sans/FiraSans-SemiBold.woff') format('woff'),
+        url('fira-sans/FiraSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fira-sans/FiraSans-BoldItalic.eot');
+    src: url('fira-sans/FiraSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fira-sans/FiraSans-BoldItalic.woff2') format('woff2'),
+        url('fira-sans/FiraSans-BoldItalic.woff') format('woff'),
+        url('fira-sans/FiraSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
 }
